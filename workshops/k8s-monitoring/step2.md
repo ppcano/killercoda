@@ -1,19 +1,13 @@
-# Step 2: Add the Grafana Helm repository
+# Step 1: Create the `meta`{{copy}} and `prod`{{copy}} namespaces
 
-All three helm charts (Loki, Grafana, and the Kubernetes Monitoring Helm) are available in the Grafana Helm repository. Add the Grafana Helm repository by running the following command:
+The K8s Monitoring Helm chart will monitor two namespaces: `meta`{{copy}} and `prod`{{copy}}:
 
-```bash
-helm repo add grafana https://grafana.github.io/helm-charts && helm repo update
-```{{exec}}
+- `meta`{{copy}} namespace: This namespace will be used to deploy Loki, Grafana, and Alloy.
 
-It’s recommended to also run `helm repo update`{{copy}} to ensure you have the latest version of the charts.
+- `prod`{{copy}} namespace: This namespace will be used to deploy the sample application that will generate logs.
 
-# Step 3: Clone the tutorial repository
-
-Clone the tutorial repository by running the following command:
+Create the `meta`{{copy}} and `prod`{{copy}} namespaces by running the following commands:
 
 ```bash
-git clone https://github.com/grafana/alloy-scenarios.git && cd alloy-scenarios/k8s-logs
+kubectl create namespace meta && kubectl create namespace prod
 ```{{exec}}
-
-As well as cloning the repository, we have also changed directories to `alloy-scenarios/k8s-logs`{{copy}}. **The rest of this tutorial assumes you are in this directory.**

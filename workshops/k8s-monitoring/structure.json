@@ -1,0 +1,8 @@
+{
+	"items": [
+		{
+			"path": "k8s-monitoring",
+			"title": "Kubernetes Monitoring with Loki"
+		}
+	]
+}

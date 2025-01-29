@@ -1,10 +1,8 @@
 {
-  "title": "Kubernetes Monitoring with Loki",
+  "title": "Offsite - Kubernetes Monitoring with Loki",
   "description": "Learn how to collect and store logs from your Kubernetes cluster using Loki.",
   "details": {
-    "intro": {
-      "text": "intro.md"
-    },
+    "intro": {},
     "steps": [
       {
         "text": "step1.md"
@@ -23,11 +21,24 @@
       },
       {
         "text": "step6.md"
+      },
+      {
+        "text": "step7.md"
+      },
+      {
+        "text": "step8.md"
+      },
+      {
+        "text": "step9.md"
+      },
+      {
+        "text": "step10.md"
+      },
+      {
+        "text": "step11.md"
       }
     ],
-    "finish": {
-      "text": "finish.md"
-    }
+    "finish": {}
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-2nodes"
