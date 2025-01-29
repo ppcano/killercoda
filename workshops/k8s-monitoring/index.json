@@ -1,5 +1,5 @@
 {
-  "title": "Offsite - Kubernetes Monitoring with Loki",
+  "title": "Offsite 2 - Kubernetes Monitoring with Loki",
   "description": "Learn how to collect and store logs from your Kubernetes cluster using Loki.",
   "details": {
     "intro": {},
